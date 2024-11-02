@@ -6,7 +6,7 @@ app = Flask(_name_)
 def home():
     return "Welcome to your Raspberry Pi Server!"
 
-@app.route('/status')
+@app.route('/status') 
 def status():
     return jsonify({
         'status': 'Server is running!',
